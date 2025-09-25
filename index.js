@@ -31,3 +31,8 @@ const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
     console.error(error);
   }
 })();
+
+if (!process.env.TOKEN) {
+  console.error("❌ No bot token found! Did you set TOKEN in env vars?");
+  process.exit(1);
+}
