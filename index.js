@@ -3,6 +3,9 @@ const { REST, Routes } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
 
+const http = require("http");
+http.createServer((req, res) => res.end("Bot is running")).listen(process.env.PORT || 3000);
+
 const commands = [];
 const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith(".js"));
