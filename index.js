@@ -36,3 +36,5 @@ if (!process.env.TOKEN) {
   console.error("❌ No bot token found! Did you set TOKEN in env vars?");
   process.exit(1);
 }
+
+client.login(process.env.TOKEN)
