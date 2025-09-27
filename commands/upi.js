@@ -10,7 +10,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor(0x1ABC9C)
       .setTitle("📲 UPI Payment")
-      .setDescription("Scan the QR code below to pay via UPI:")
+      .setDescription("Scan the QR code below to pay via UPI: nihalnbr@fam")
       .setImage(upiImage)
       .setFooter({ text: "UPI Payment QR" });
 
