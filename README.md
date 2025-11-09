@@ -1,1 +1,1 @@
-# scaling-bassoon
+# gbot-discord
